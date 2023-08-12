@@ -22,8 +22,8 @@ int main(int argc,char* argv[]) {
     lat = mh2lat(locator);    
       lon = mh2lon(locator);
 
-      printf("The latitude  is %f, and its longitude is %f\n", lat, lon);
-       
+     // printf("The latitude  is %f, and its longitude is %f\n", lat, lon);
+        printf("The latitude、longitude is(%f %f)\n", lat, lon);
     }
 
 
@@ -42,7 +42,8 @@ int main(int argc,char* argv[]) {
          lat=std::stold( s1);
          lon=std::stold(s2);
          
-         printf("The latitude  is %f, and its longitude is %f\n", lat, lon);
+        printf("The latitude、longitude is(%f %f)\n", lat, lon);
+         //printf("The latitude  is %f, and its longitude is %f\n", lat, lon);
          
          char* locator=get_mh(lat,lon,10);
          printf("the Maidenhead Locator is %s\n", locator);
